@@ -5,15 +5,15 @@ import "../styles/Map.scss";
 import React from "react";
 import Router from "next/router";
 import NProgress from "nprogress";
-import head from "next/head";
+import Head from "next/head";
 
 function MyApp({ Component, pageProps }) {
-  <head>
+  <Head>
     <link
       href="https://api.mapbox.com/mapbox-gl-js/v0.51.0/mapbox-gl.css"
       rel="stylesheet"
     />
-  </head>;
+  </Head>;
 
   //Loading Bar on top Progress display
   React.useEffect(() => {

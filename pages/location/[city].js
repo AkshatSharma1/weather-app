@@ -58,7 +58,7 @@ export async function getServerSideProps(context) {
   }
   // console.log(data);
 
-  const urlName = context.params.city;
+  // const urlName = context.params.city;
   const hourlyWeather = getHourlyWeather(data.hourly, data.timezone);
 
   return {
@@ -86,6 +86,7 @@ const getHourlyWeather = (hourlyData, timezone) => {
 };
 
 export default function City({
+  weather,
   currentWeather,
   hourlyWeather,
   dailyWeather,

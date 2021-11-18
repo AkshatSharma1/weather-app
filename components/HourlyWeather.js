@@ -1,6 +1,6 @@
-import moment from "moment";
 import React from "react";
 import Image from "next/image";
+import moment from "moment-timezone";
 
 export default function HourlyWeather({ hourlyWeather, timezone }) {
   console.log(hourlyWeather);
