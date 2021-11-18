@@ -102,6 +102,32 @@ h6 {
     -webkit-animation: clouds 60s linear infinite;
 }
 
+  &__clear{
+    background-image: url(../public/images/clear.png);
+    background-position: center;
+    color: #000000;
+}
+
+&__rain{
+  background: url(../public/images/rain.png);
+  background-position: 0px -100px;
+  background-size: cover;
+  background-repeat: repeat-x;
+  color: rgb(255, 255, 255);
+  // background-repeat: repeat;
+  // animation: rain 1s linear infinite;
+  // -webkit-animation: rain 1s linear infinite;
+}
+
+// @keyframes rain {
+//   0%{
+//     background-position: 0% 0%;
+//   }
+//   100%{
+//     background-position: 20% 100%;
+//   }
+// }
+
 @keyframes clouds {
 
   0%{
@@ -388,7 +414,7 @@ h6 {
     linear-gradient(#878787, #ebebeb);
   background-size: cover;
   border-bottom: 3px solid blue;
-  box-shadow: 1px 1px 4px 4px rgba(21, 164, 184, 0.74);
+  box-shadow: 1px 1px 40px 251px rgba(21, 164, 184, 0.74);
   // -webkit-box-shadow: 1px 8px 5px 4px rgba(21, 164, 184, 0.74);
   // -moz-box-shadow: 1px 8px 5px 4px rgba(21, 164, 184, 0.74);
 
