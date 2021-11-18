@@ -1,0 +1,62 @@
+.nav {
+
+  &__logo {
+    position: relative;
+    top: -20px;
+    display: flex;
+    color: #ffffff;
+    margin: 0 auto;
+    max-width: 850px;
+    width: 100%;
+    z-index: 1;
+
+    $width1: 848px;
+    @media (max-width: $width1)
+    {
+      top: -40px;
+    }
+
+    $width2: 480px;
+    @media (max-width: $width2)
+    {
+      top: -80px;
+    }
+
+    $width3: 550px;
+    @media (max-width: $width3)
+    {
+      top: -70px;
+    }
+  }
+
+  &:after {
+    background: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    from(hsla(0, 0%, 6%, 0)),
+    to(#111)
+    );
+    background: linear-gradient(0deg, hsla(0, 0%, 6%, 0), #111);
+    content: "";
+    height: 120px;
+    // height: 120px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+
+
+  h1 {
+    position: relative;
+    top: 12px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: Solis, Arial, Helvetica, sans-serif;
+  }
+
+  img {
+    height: 50px;
+    width: 50px;
+  }
+}
