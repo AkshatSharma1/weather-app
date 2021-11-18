@@ -29,12 +29,12 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="lower">
+      {/* <div className="lower">
         <h2>India Map</h2>
         <div className="mapP">
           <Map />
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
