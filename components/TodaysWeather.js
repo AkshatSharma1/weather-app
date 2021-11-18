@@ -12,7 +12,7 @@ export default function TodaysWeather({ city, weather, timezone }) {
 
   return (
     <div className="today">
-      <div  className={`${weather.weather[0].main == "Clouds" ? "today__clouds" : "today"}`}>
+      <div  className={`${weather.weather[0].main == "Clouds" ? "today__clouds" : `${weather.weather[0].main == "Clear"?"today__clear" : `${weather.weather[0].main=="Rain"? "today__rain" : ""}`}`}`}>
         <div className="today__inner">
           <div className="today__left-content">
             <h1>
